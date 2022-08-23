@@ -1,0 +1,159 @@
+/* -------- */
+@import 'destyle.css';
+
+/* -------- */
+
+/* -------- */
+/* custom props */
+/* -------- */
+
+:root {
+	/* font */
+	// --word-spacing: ; // .16x
+
+	/* color */
+	--color-brand: var(--yellow-3);
+	--color-text-1: var(--gray-3);
+	--color-text-2: ;
+	--color-link-base: var(--indigo-4);
+	--color-link-active: var(--red-4);
+	--color-surface-1: hsl(200, 20%, 9%);
+	--color-surface-2: ;
+	--color-surface-3: ;
+	--color-surface-4: ;
+}
+
+.sr-only {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+// --------
+// mixins
+// --------
+
+// TODO
+// ! refactor base styles
+
+// --------
+/* global styles */
+// --------
+
+// theme colors
+body {
+	background-color: var(--color-surface-1);
+}
+
+// focus indicator
+
+// base text styles
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+code,
+pre,
+div {
+	// font-family: var(--font);
+	font-family: var(--font-sans);
+	letter-spacing: var(--font-letterspacing-1);
+	color: var(--color-text-1);
+}
+
+// links
+@mixin link-base {
+	text-decoration: underline;
+	text-underline-offset: 0.25rem;
+	&:active,
+	&:hover,
+	&:focus {
+		color: var(--color-link-active);
+	}
+}
+a {
+	@include link-base;
+	&[aria-current='page'] {
+		color: var(--color-brand);
+	}
+}
+
+// base heading styles
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: var(--font-weight-5);
+	margin-block: 1rem;
+
+	&:not(h1)::before {
+		content: '';
+		background: var(--color-brand);
+		display: block;
+		height: 0.125rem;
+		width: 4vw;
+		margin-block: 2.5rem 1rem;
+	}
+}
+
+// heading sizes
+h1 {
+	// font-size: var(--font-heading-1);
+	font-size: var(--font-size-fluid-3);
+}
+h2 {
+	font-size: var(--font-size-fluid-2);
+}
+h3 {
+	font-size: var(--font-size-fluid-1);
+}
+h4 {
+	font-size: var(--font-size-fluid-0);
+}
+
+p,
+a {
+	line-height: var(--font-lineheight-4);
+	margin-block-start: var(--font-size-fluid-1);
+	font-size: clamp(1rem, 1.125rem, 1.5rem);
+}
+
+// default list style has bullets: must add class to remove
+ul {
+	li {
+		margin-block: 1rem;
+	}
+	ul:not(.list__no-bullets) li {
+		padding-inline-start: 1rem;
+		list-style-type: disc;
+		list-style-position: inside;
+	}
+}
+
+@mixin blockmessage($color) {
+	margin-inline-start: 1rem;
+	padding: 2rem;
+	border-inline-start: solid #{$color} 2px;
+}
+
+pre.blockquote.error {
+	@include blockmessage(var(--red-4));
+}
+
+blockquote {
+	& > p:first-of-type {
+		margin-block-start: unset;
+	}
+	@include blockmessage(var(--color-brand));
+}
