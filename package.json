@@ -22,6 +22,7 @@
 		"eslint": "^8.16.0",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-svelte3": "^4.0.0",
+		"mdsvex": "^0.10.6",
 		"postcss": "^8.4.14",
 		"postcss-import": "^14.1.0",
 		"postcss-jit-props": "^1.0.7",
@@ -39,6 +40,7 @@
 	"dependencies": {
 		"destyle.css": "^3.0.2",
 		"open-props": "^1.4.13",
-		"sass": "^1.54.4"
+		"sass": "^1.54.4",
+		"toml": "^3.0.0"
 	}
 }
