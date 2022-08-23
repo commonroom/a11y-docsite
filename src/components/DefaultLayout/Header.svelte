@@ -4,7 +4,6 @@
 
 	// props
 	export let currentPath: string;
-
 </script>
 
 <header>
@@ -27,14 +26,17 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: flex-start;
+
+		// removes list decoration and positions to left
+		list-style-position: outside;
+		list-style: none;
+		margin-inline-start: 0;
+		padding-inline-start: 0;
 	}
 
 	li {
-		// padding-inline: unset;
-		// list-style: none;
-		// margin-block: unset;
-
 		line-height: var(--font-lineheight-4);
 		letter-spacing: var(--font-letterspacing-1);
+		margin-inline-end: 2rem;
 	}
 </style>

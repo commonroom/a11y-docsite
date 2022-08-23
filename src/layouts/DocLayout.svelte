@@ -22,30 +22,9 @@
 	<title>A11y Docsite {pageTitle}</title>
 </svelte:head>
 
-<div class="content">
-	<Header {currentPath} />
-
-	<main>
-		<slot />
-	</main>
-	<!--  -->
-	<Footer />
+<div class="doc-content">
+	<slot />
 </div>
 
-<style lang="scss" global>
-	body {
-		padding: 0 2rem;
-	}
-	header,
-	footer {
-		padding: 1em 0 1rem;
-	}
-
-	.content {
-		display: flex;
-		flex-direction: column;
-		margin: 0 auto;
-		max-width: 70ch;
-		min-height: 100vh;
-	}
+<style lang="scss">
 </style>

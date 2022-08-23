@@ -1,6 +1,7 @@
 /* -------- */
-@import 'destyle.css';
-
+/* destyle.css reset */
+/*  ✅ imported via script in __layout.svelte */
+/* @import 'destyle.css'; */
 /* -------- */
 
 /* -------- */
@@ -21,15 +22,6 @@
 	--color-surface-2: ;
 	--color-surface-3: ;
 	--color-surface-4: ;
-}
-
-.sr-only {
-	position: absolute;
-	left: -10000px;
-	top: auto;
-	width: 1px;
-	height: 1px;
-	overflow: hidden;
 }
 
 // --------
@@ -95,7 +87,7 @@ h4,
 h5,
 h6 {
 	font-weight: var(--font-weight-5);
-	margin-block: 1rem;
+	margin-block: 2.5rem 1rem;
 
 	&:not(h1)::before {
 		content: '';

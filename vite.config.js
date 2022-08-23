@@ -1,7 +1,6 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 import { resolve } from 'path';
 
-
 /** @type {import('vite').UserConfig} */
 const config = {
 	plugins: [sveltekit()],
@@ -12,9 +11,7 @@ const config = {
 			$routes: resolve('./src/routes/'),
 			$stores: resolve('./src/stores/'),
 			$types: resolve('./src/types/'),
-			$utils: resolve('./src/utils/'),
-			$styles: resolve('./src/styles'),
-			$layouts: resolve('./src/routes/_layouts'),
+			$utils: resolve('./src/utils/')
 		}
 	}
 };

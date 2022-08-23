@@ -29,8 +29,6 @@
 			"$stores/*": ["src/stores/*"],
 			"$types/*": ["src/types/*"],
 			"$utils/*": ["src/utils/*"],
-			"$styles/*": ["src/styles/*"],
-			"$layouts/*": ["src/routes/_layouts/*"],
 		}
 	}
 }
