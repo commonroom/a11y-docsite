@@ -1,7 +1,9 @@
 // modify order to change UI
 // manually add paths to the enum
 export enum MenuPaths {
-	Home = '/' // index.svelte
+	Home = '/', // index.svelte
+	Docs = '/docs',
+	About = '/about'
 }
 
 export interface MenuItem {
