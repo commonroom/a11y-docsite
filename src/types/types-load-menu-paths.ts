@@ -15,8 +15,8 @@ export interface MenuItem {
 export interface FM {
 	title: string;
 	description?: string;
-	date: string;
-	category?: string[];
+	date?: string;
+	category: string;
 	type?: string;
 	tags?: string[];
 	keywords?: string[];
