@@ -13,7 +13,7 @@
 
 	let docCategories: string[] = [];
 
-	const getCategories = data.docs.map((ent) => {
+	data.docs.map((ent) => {
 		let cat = ent.frontmatter.category;
 
 		if (!cat || docCategories.includes(cat.toLowerCase())) return;
@@ -32,12 +32,16 @@
 		{@const cat = category}
 
 		{#if doc.frontmatter.category?.toLowerCase() === cat}
-			<div>
+			<a href={doc.path} class="doc-link">
 				{doc.frontmatter.title}
-			</div>
+			</a>
 		{/if}
 	{/each}
 {/each}
 
 <style lang="scss">
+	.doc-link {
+		display: block;
+		margin-block-start: 1rem;
+	}
 </style>

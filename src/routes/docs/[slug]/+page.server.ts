@@ -10,7 +10,7 @@ export const load = async ({ params }: LoadEvent) => {
 		const frontmatter: FM = Doc.metadata;
 
 		return {
-			Doc,
+			Doc: Doc.default.render().html,
 			frontmatter
 		};
 	} catch (err) {

@@ -3,12 +3,6 @@
 
 	import type { FM } from '$types/types-load-menu-paths';
 
-	// import DocLayout from '$src/layouts/DocLayout.svelte';
-
-	// TODO
-	// get type for doc
-	// annotate data with FM type
-
 	interface DocData {
 		docData: PageData;
 		frontmatter: FM;
@@ -18,7 +12,12 @@
 	export let data: DocData;
 </script>
 
-{@html data.Doc.default.render().html}
+<h1>{data.frontmatter.title}</h1>
+
+{@html data.Doc}
+<!-- {@html data.Doc.default.render().html} -->
+
+<!-- <data.Doc />  -->
 
 <style lang="scss">
 </style>
