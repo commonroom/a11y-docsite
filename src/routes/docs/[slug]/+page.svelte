@@ -19,7 +19,12 @@
 {#if data.Doc.length > hackWrapper}
 	{@html data.Doc}
 {:else}
-	<p>Contribute to the documentation on Github</p>
+	<h2>This page needs some work</h2>
+	<p>
+		Contribute to the documentation <a href="https://github.com/commonroom/a11y-docsite" target="_blank"
+			>on Github</a
+		>
+	</p>
 {/if}
 
 <style lang="scss">
