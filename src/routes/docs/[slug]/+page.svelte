@@ -10,14 +10,17 @@
 	}
 
 	export let data: DocData;
+
+	const hackWrapper = '<div class="doc-content s-Ho9MrNAHWzxw"></div>'.length + 1;
 </script>
 
 <h1>{data.frontmatter.title}</h1>
 
-{@html data.Doc}
-<!-- {@html data.Doc.default.render().html} -->
-
-<!-- <data.Doc />  -->
+{#if data.Doc.length > hackWrapper}
+	{@html data.Doc}
+{:else}
+	<p>Contribute to the documentation on Github</p>
+{/if}
 
 <style lang="scss">
 </style>

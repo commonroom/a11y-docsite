@@ -7,3 +7,5 @@ declare namespace App {
 	// interface PrivateEnv {}
 	// interface PublicEnv {}
 }
+// workaround for importing .md files via mdsvex 
+declare module '*.md';

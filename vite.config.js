@@ -11,7 +11,8 @@ const config = {
 			$routes: resolve('./src/routes/'),
 			$stores: resolve('./src/stores/'),
 			$types: resolve('./src/types/'),
-			$utils: resolve('./src/utils/')
+			$utils: resolve('./src/utils/'),
+			$lib: resolve('./src/lib/')
 		}
 	}
 };

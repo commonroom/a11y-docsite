@@ -1,4 +1,5 @@
 import { fetchMarkdownDocs } from '$utils/fetchMarkdownDocs';
+
 import { json } from '@sveltejs/kit';
 
 export const GET = async () => {
@@ -6,3 +7,4 @@ export const GET = async () => {
 
 	return json(allDocs);
 };
+

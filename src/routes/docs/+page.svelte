@@ -20,8 +20,6 @@
 
 		docCategories = [...docCategories, cat];
 	});
-
-	console.log(docCategories);
 </script>
 
 <h1>A11y Docs</h1>

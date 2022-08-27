@@ -7,7 +7,7 @@ import toml from 'toml';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	extensions: ['.md', '.svelte', ...mdsvexConfig.extensions],
+	extensions: ['.svelte', '.md', ...mdsvexConfig.extensions],
 
 	preprocess: [
 		preprocess({
