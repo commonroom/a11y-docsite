@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Readme from '$lib/docs/readme.md';
+	import Readme from '$lib/docPages/readme.md';
 </script>
 
 <h1>A11y Docsite</h1>
