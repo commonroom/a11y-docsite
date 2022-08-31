@@ -1,10 +1,8 @@
 <script lang="ts">
-	import Readme from '$lib/docPages/readme.md';
+	import HomePage from '$lib/docPages/homePage.md';
 </script>
 
-<h1>A11y Docsite</h1>
-
-<Readme />
+<HomePage />
 
 <style lang="scss">
 </style>

@@ -3,8 +3,9 @@
 
 export enum MenuPaths {
 	Home = '/', // index.svelte
+	About = '/about',
 	Docs = '/docs',
-	About = '/about'
+	Resources = '/resources'
 }
 
 export interface MenuItem {

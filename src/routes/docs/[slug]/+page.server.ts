@@ -14,7 +14,7 @@ export const load = async ({ params }: LoadEvent) => {
 			frontmatter
 		};
 	} catch (err) {
-		throw error(404, err.message);
+		throw error(404, 'Page not found');
 	}
 };
 

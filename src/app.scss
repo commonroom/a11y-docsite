@@ -115,7 +115,8 @@ h4 {
 }
 
 p,
-a {
+a,
+li {
 	line-height: var(--font-lineheight-4);
 	margin-block-start: var(--font-size-fluid-1);
 	font-size: clamp(1rem, 1.125rem, 1.5rem);
