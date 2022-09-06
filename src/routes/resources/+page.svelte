@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Resources from '$lib/docPages/resources.md';
+	import Resources from '$lib/siteContent/resources.md';
 </script>
 
 <Resources />

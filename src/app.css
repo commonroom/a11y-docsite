@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/* -------- */
+/* destyle.css reset */
+/*  ✅ imported via script in __layout.svelte */
+/* @import 'destyle.css'; */
+/* -------- */
+/* -------- */
+/* custom props */
+/* -------- */
+:root {
+  /* font */
+  /* color */
+  --color-brand: var(--yellow-3);
+  --color-text-1: var(--gray-3);
+  --color-text-2: ;
+  --color-link-base: var(--indigo-4);
+  --color-link-active: var(--red-4);
+  --color-surface-1: hsl(200, 20%, 9%);
+  --color-surface-2: ;
+  --color-surface-3: ;
+  --color-surface-4: ;
+}
+
+/* global styles */
+body {
+  background-color: var(--color-surface-1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+code,
+pre,
+div {
+  font-family: var(--font-sans);
+  letter-spacing: var(--font-letterspacing-1);
+  color: var(--color-text-1);
+}
+
+a {
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+
+a:active, a:hover, a:focus {
+  color: var(--color-link-active);
+}
+
+a[aria-current='page'] {
+  color: var(--color-brand);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--font-weight-5);
+  margin-block: 2.5rem 1rem;
+}
+
+h1:not(h1)::before,
+h2:not(h1)::before,
+h3:not(h1)::before,
+h4:not(h1)::before,
+h5:not(h1)::before,
+h6:not(h1)::before {
+  content: '';
+  background: var(--color-brand);
+  display: block;
+  height: 0.125rem;
+  width: 4vw;
+  margin-block: 2.5rem 1rem;
+}
+
+h1 {
+  font-size: var(--font-size-fluid-3);
+}
+
+h2 {
+  font-size: var(--font-size-fluid-2);
+}
+
+h3 {
+  font-size: var(--font-size-fluid-1);
+}
+
+h4 {
+  font-size: var(--font-size-fluid-0);
+}
+
+p,
+a,
+li {
+  line-height: var(--font-lineheight-4);
+  -webkit-margin-before: var(--font-size-fluid-1);
+          margin-block-start: var(--font-size-fluid-1);
+  font-size: clamp(1rem, 1.125rem, 1.5rem);
+}
+
+ul li {
+  margin-block: 1rem;
+}
+
+ul ul:not(.list__no-bullets) li {
+  -webkit-padding-start: 1rem;
+          padding-inline-start: 1rem;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+pre.blockquote.error {
+  -webkit-margin-start: 1rem;
+          margin-inline-start: 1rem;
+  padding: 2rem;
+  -webkit-border-start: solid var(--red-4) 2px;
+          border-inline-start: solid var(--red-4) 2px;
+}
+
+blockquote {
+  -webkit-margin-start: 1rem;
+          margin-inline-start: 1rem;
+  padding: 2rem;
+  -webkit-border-start: solid var(--color-brand) 2px;
+          border-inline-start: solid var(--color-brand) 2px;
+}
+
+blockquote > p:first-of-type {
+  -webkit-margin-before: unset;
+          margin-block-start: unset;
+}
+/*# sourceMappingURL=app.css.map */

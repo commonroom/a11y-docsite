@@ -1,5 +1,5 @@
 ---
-title = "countdown timers# required" # required 
+title = "countdown timers" # required 
 # description
 # date 
 category = "patterns" # required 

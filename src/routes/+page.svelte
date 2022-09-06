@@ -1,5 +1,5 @@
 <script lang="ts">
-	import HomePage from '$lib/docPages/homePage.md';
+	import HomePage from '$lib/siteContent/homePage.md';
 </script>
 
 <HomePage />
