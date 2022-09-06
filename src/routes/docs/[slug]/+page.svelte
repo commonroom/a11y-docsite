@@ -11,6 +11,7 @@
 
 	export let data: DocData;
 
+	const docPath = data.frontmatter.title.split(' ').join('-')
 	const hackWrapper = '<div class="doc-content s-Ho9MrNAHWzxw"></div>'.length + 1;
 </script>
 
@@ -21,7 +22,7 @@
 {:else}
 	<h2>This page needs some work</h2>
 	<p>
-		Contribute to the documentation <a href="https://github.com/commonroom/a11y-docsite" target="_blank"
+		Contribute to the documentation <a href={`https://github.com/commonroom/a11y-docsite/blob/master/src/lib/docs/${docPath}.md`} target="_blank"
 			>on Github</a
 		>
 	</p>
